@@ -35,18 +35,20 @@
         }
 
         .neon-glow-gold {
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.18);
         }
 
         .glass-panel {
-            background: rgba(11, 21, 45, 0.45);
+            background: rgba(11, 21, 45, 0.55);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(212, 175, 55, 0.05);
         }
 
         .glass-panel:hover {
-            border-color: rgba(212, 175, 55, 0.3);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3), 0 0 25px rgba(212, 175, 55, 0.15);
         }
 
         .tool-card {
@@ -94,14 +96,14 @@
     
     <!-- Ambient glowing backgrounds -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none z-[-2]">
-        <div class="absolute w-[600px] h-[600px] rounded-full bg-gold/5 blur-[150px] top-[-10%] left-[-10%] animate-glow-1"></div>
-        <div class="absolute w-[700px] h-[700px] rounded-full bg-accentpurple/5 blur-[180px] bottom-[-20%] right-[-10%] animate-glow-2"></div>
-        <div class="absolute w-[500px] h-[500px] rounded-full bg-blue-500/5 blur-[130px] top-[30%] right-[15%]"></div>
+        <div class="absolute w-[320px] sm:w-[600px] h-[320px] sm:h-[600px] rounded-full bg-gold/10 blur-[100px] sm:blur-[150px] top-[-10%] left-[-10%] animate-glow-1"></div>
+        <div class="absolute w-[350px] sm:w-[700px] h-[350px] sm:h-[700px] rounded-full bg-accentpurple/10 blur-[110px] sm:blur-[180px] bottom-[-20%] right-[-10%] animate-glow-2"></div>
+        <div class="absolute w-[280px] sm:w-[500px] h-[280px] sm:h-[500px] rounded-full bg-blue-500/10 blur-[90px] sm:blur-[130px] top-[30%] right-[15%]"></div>
     </div>
 
     <!-- Background Circuit Line Traces (matching invitation design) -->
     <!-- Left side circuit -->
-    <div class="absolute left-0 top-0 h-full w-20 md:w-32 lg:w-48 overflow-hidden pointer-events-none opacity-40 select-none hidden sm:block">
+    <div class="absolute left-0 top-0 h-full w-12 sm:w-20 md:w-32 lg:w-48 overflow-hidden pointer-events-none opacity-20 sm:opacity-40 select-none block">
         <svg class="w-full h-full text-golddim/40" viewBox="0 0 100 1200" fill="none" stroke="currentColor" stroke-width="1.5">
             <!-- Normal circuit path -->
             <path d="M 0,50 L 50,50 L 70,70 L 70,200 L 40,230 L 40,350 L 80,390 L 80,550 L 20,610 L 20,750 L 60,790 L 60,950 L 10,1000 L 10,1150" stroke-opacity="0.3"/>
@@ -130,7 +132,7 @@
     </div>
 
     <!-- Right side circuit -->
-    <div class="absolute right-0 top-0 h-full w-20 md:w-32 lg:w-48 overflow-hidden pointer-events-none opacity-40 select-none hidden sm:block">
+    <div class="absolute right-0 top-0 h-full w-12 sm:w-20 md:w-32 lg:w-48 overflow-hidden pointer-events-none opacity-20 sm:opacity-40 select-none block">
         <svg class="w-full h-full text-golddim/40" viewBox="0 0 100 1200" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M 100,50 L 50,50 L 30,70 L 30,200 L 60,230 L 60,350 L 20,390 L 20,550 L 80,610 L 80,750 L 40,790 L 40,950 L 90,1000 L 90,1150" stroke-opacity="0.3"/>
             <path class="animated-circuit text-gold" d="M 100,50 L 50,50 L 30,70 L 30,200 L 60,230 L 60,350 L 20,390 L 20,550 L 80,610 L 80,750 L 40,790 L 40,950 L 90,1000 L 90,1150" stroke-width="2"/>
@@ -490,7 +492,7 @@
                     
                     <div class="glass-panel p-4 rounded-xl border border-white/5 hover:border-gold/30 hover:bg-navylight/60 transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <span class="text-lg font-bold text-gold shrink-0">16:00 - 16:15</span>
-                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">התכנסות וארוחת צהרים</span>
+                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">מפגש פסגה: התכנסות, קפה ופתיח קולינרי מעורר השראה</span>
                     </div>
                 </div>
                 
@@ -499,7 +501,7 @@
                     <div class="absolute -right-[32px] top-1.5 w-4 h-4 rounded-full bg-navy border-2 border-gold shadow-[0_0_10px_rgba(212,175,55,0.6)] group-hover:scale-125 transition-transform duration-300"></div>
                     <div class="glass-panel p-4 rounded-xl border border-white/5 hover:border-gold/30 hover:bg-navylight/60 transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <span class="text-lg font-bold text-gold shrink-0">16:15 - 17:00</span>
-                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">יוצרים תמונות ואינפוגרפיקות</span>
+                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">מעצבים מציאות: יצירת דימויים רפואיים ואינפוגרפיקות ויזואליות ב-AI</span>
                     </div>
                 </div>
 
@@ -508,7 +510,7 @@
                     <div class="absolute -right-[32px] top-1.5 w-4 h-4 rounded-full bg-navy border-2 border-gold shadow-[0_0_10px_rgba(212,175,55,0.6)] group-hover:scale-125 transition-transform duration-300"></div>
                     <div class="glass-panel p-4 rounded-xl border border-white/5 hover:border-gold/30 hover:bg-navylight/60 transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <span class="text-lg font-bold text-gold shrink-0">17:00 - 17:45</span>
-                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">יוצרים פודקסטים ומצגות למידה</span>
+                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">קול ומילה: הפקת פודקסטים קוליים ומצגות אינטראקטיביות מהירות</span>
                     </div>
                 </div>
 
@@ -519,7 +521,7 @@
                         <span class="text-lg font-bold text-slate-400 shrink-0">17:45 - 18:00</span>
                         <span class="text-base text-slate-300 font-semibold sm:text-left w-full sm:pr-4 flex items-center gap-2">
                             <i class="fa-solid fa-mug-hot text-xs text-gold"></i>
-                            הפסקה
+                            הטענת מצברים: הפסקת נטוורקינג ורענון דיגיטלי
                         </span>
                     </div>
                 </div>
@@ -529,7 +531,7 @@
                     <div class="absolute -right-[32px] top-1.5 w-4 h-4 rounded-full bg-navy border-2 border-gold shadow-[0_0_10px_rgba(212,175,55,0.6)] group-hover:scale-125 transition-transform duration-300"></div>
                     <div class="glass-panel p-4 rounded-xl border border-white/5 hover:border-gold/30 hover:bg-navylight/60 transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <span class="text-lg font-bold text-gold shrink-0">18:00 - 19:00</span>
-                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">יוצרים משחק למידה</span>
+                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">משחקים עם הידע: פיתוח משחקי למידה אינטראקטיביים שיסחפו את המטופלים</span>
                     </div>
                 </div>
 
@@ -538,7 +540,7 @@
                     <div class="absolute -right-[32px] top-1.5 w-4 h-4 rounded-full bg-navy border-2 border-gold shadow-[0_0_10px_rgba(212,175,55,0.6)] group-hover:scale-125 transition-transform duration-300"></div>
                     <div class="glass-panel p-4 rounded-xl border border-white/5 hover:border-gold/30 hover:bg-navylight/60 transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <span class="text-lg font-bold text-gold shrink-0">19:00 - 20:00</span>
-                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">יוצרים סרטון למידה</span>
+                        <span class="text-base text-slate-200 font-semibold sm:text-left w-full sm:pr-4">אורות, מצלמה, AI: הפקת סרטוני הדרכה מבוססי אווטאר מדבר</span>
                     </div>
                 </div>
             </div>
