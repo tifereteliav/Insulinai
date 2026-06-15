@@ -560,15 +560,7 @@
     <!-- Footer -->
     <footer class="border-t border-white/10 bg-[#060d21]/90 backdrop-blur-md relative z-20 overflow-hidden">
         
-        <!-- Logo block - bottom-left corner -->
-        <div class="absolute bottom-6 left-4 md:bottom-8 md:left-8 z-30 group" id="tiferet-logo">
-            <div class="absolute -inset-1.5 bg-gradient-to-r from-gold/30 to-gold/10 rounded-3xl blur-md opacity-80 group-hover:opacity-100 transition duration-500"></div>
-            <div class="relative w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden bg-white flex items-center justify-center p-2 border border-gold/25 shadow-md transition-transform duration-500 group-hover:scale-105">
-                <img src="logo.png" alt="לוגו תפארת אליאב" class="w-full h-full object-contain">
-            </div>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-4 pt-12 pb-24 md:pb-12 flex flex-col items-center relative">
+        <div class="max-w-6xl mx-auto px-4 pt-12 pb-12 flex flex-col items-center relative">
             
             <!-- Organizer Profile Details -->
             <div class="mb-10 w-full max-w-3xl glass-panel p-8 rounded-3xl flex flex-col items-center justify-center gap-6 text-center shadow-2xl" id="profile-card">
@@ -588,7 +580,12 @@
                     </p>
                     
                     <!-- Social Links -->
-                    <div class="flex justify-center gap-4 flex-wrap">
+                    <div class="flex justify-center gap-4 flex-wrap items-center">
+                        <!-- Tiferet Eliav Logo -->
+                        <a href="https://tiferet-eliav.vercel.app" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full overflow-hidden bg-white border border-gold/30 p-1.5 shadow-md flex items-center justify-center shrink-0 transition-all duration-300 hover:scale-110 hover:border-gold" title="אתר תפארת אליאב" aria-label="Website">
+                            <img src="logo.png" alt="לוגו תפארת אליאב" class="w-full h-full object-contain">
+                        </a>
+
                         <!-- Website -->
                         <a href="https://tiferet-eliav.vercel.app" target="_blank" rel="noopener noreferrer" class="bg-navy hover:bg-[#0b152d] border border-white/10 hover:border-gold p-3 rounded-full text-slate-300 hover:text-gold transition-all hover:scale-110 shadow-sm" title="אתר" aria-label="Website">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
@@ -630,6 +627,12 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Bottom footnote -->
+            <div class="text-center text-xs text-slate-500/80 mt-8 pb-4">
+                הדף פותח במיוחד עבור סדנת אינסולין על ידי תפארת אליאב 2026
+            </div>
+
         </div>
     </footer>
 </body>
